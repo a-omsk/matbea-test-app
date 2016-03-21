@@ -10,19 +10,19 @@ const Header = (props) => {
     const restristedContent = props.isAuthorized ? (
         <div>
         <div style={inline}>
-            <Link to={{ pathname: 'transactions' }}>
+            <Link to={{ pathname: '/user/transactions' }}>
                 <h5>Список транзакций</h5>
             </Link>
         </div>
 
         <div style={inline}>
-            <Link to={{ pathname: 'add' }}>
+            <Link to={{ pathname: '/user/add' }}>
                 <h5>Добавить транзакцию</h5>
             </Link>
         </div>
 
         <div style={inline}>
-            <Link to={{ pathname: 'logout' }}>
+            <Link to={{ pathname: '/user/logout' }}>
                 <h5>Выйти</h5>
             </Link>
         </div>

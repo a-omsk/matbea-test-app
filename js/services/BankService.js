@@ -1,4 +1,3 @@
-import BankStore from '../stores/BankStore';
 import { find } from 'lodash';
 
 const BankService = {
@@ -10,9 +9,7 @@ const BankService = {
         });
     },
 
-    getName(id) {
-        const { banks } = BankStore.getState();
-
+    getName(banks, id) {
         if (banks.length) {
             return find(banks, ({ bankId }) => bankId === id).name;
         } else {

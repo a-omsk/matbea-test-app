@@ -30,7 +30,6 @@ Select.propTypes = {
     name: React.PropTypes.string.isRequired,
     onChange: React.PropTypes.func.isRequired,
     options: React.PropTypes.array.isRequired,
-    value: React.PropTypes.string,
     error: React.PropTypes.string,
 };
 

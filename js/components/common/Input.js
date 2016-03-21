@@ -34,7 +34,6 @@ Input.propTypes = {
     onChange: React.PropTypes.func.isRequired,
     inputType: React.PropTypes.string,
     placeholder: React.PropTypes.string,
-    value: React.PropTypes.string,
     error: React.PropTypes.string,
 };
 
