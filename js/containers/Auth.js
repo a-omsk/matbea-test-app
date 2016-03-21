@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Input from '../components/common/Input';
 import { connect } from 'react-redux';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 import { bindActionCreators } from 'redux';
 import * as authFormActions from '../actions/authForm';
 import * as userActions from '../actions/user';
@@ -34,7 +34,7 @@ class Auth extends Component {
                 const { resetModel } = this.props.authFormActions;
                 login();
                 resetModel();
-                browserHistory.push('user/transactions');
+                hashHistory.push('/user/transactions');
             }
         };
     }

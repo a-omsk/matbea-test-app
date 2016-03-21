@@ -3,3 +3,7 @@
 server.js
 node_modules/
 firebase.json
+public/main.js
+public/main.css
+public/main.js.map
+public/main.css.map

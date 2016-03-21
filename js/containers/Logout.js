@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { logout } from '../actions/user';
@@ -10,7 +10,7 @@ class Logout extends Component {
         const { logout } = this.props.userActions;
 
         logout();
-        browserHistory.push('auth');
+        hashHistory.push('/auth');
     }
 
     render () {
